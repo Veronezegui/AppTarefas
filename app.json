@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Tarefas",
+    "slug": "Tarefas",
+    "version": "1.0.0",
+    "splash": {
+      "image": "./assets/to-do-list.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#7AE8FD"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Tarefas"
+}
