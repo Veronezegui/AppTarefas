@@ -1,31 +1,27 @@
 import React from 'react';
 import { Button, Container, Content, 
     ButtonText, Title, CardList,
-Search } from './styles';
+Search, Procurar, Header} from './styles';
+import { Entypo } from '@expo/vector-icons'; 
 
 export function ListaTarefas() {
     return (
         <Container>
-            <CardList>
-                <Search
-                    placeholder='Digite sua tarefa...'
-                ></Search>
-            </CardList>
+            <Header>
+            <Search
+                placeholder='Digite sua tarefa...'
+            ></Search>
+            <Procurar>
+                <ButtonText>
+                    Procurar
+                </ButtonText>
+            </Procurar>
+            </Header>
             <Content>
                 <Button>
-                    <ButtonText>
-                        Cadastrar tarefa
-                    </ButtonText>
-                </Button>
-                <Button>
-                    <ButtonText>
-                        Excluir tarefa
-                    </ButtonText>
+                    <Entypo name="add-to-list" size={30} color="white" />
                 </Button>
             </Content>
-            <Title>
-                Suas Tarefas
-            </Title>
             <CardList />
         </Container>
     )

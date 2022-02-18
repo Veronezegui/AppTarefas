@@ -10,17 +10,17 @@ export const Content = styled.View `
     background: #FFF;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+
 `
 
 export const Button = styled.TouchableOpacity `
-    justify-content: center;
-    align-items: center;
     background-color: rgb(69, 219, 248);
     padding: 20px;
     margin: 10px;
-    height: 60px;
-    border-radius: 20px;
+    border-radius: 100px;
 `
 
 export const ButtonText = styled.Text `
@@ -30,20 +30,41 @@ export const ButtonText = styled.Text `
 
 export const Title = styled.Text `
     color: #000000;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 30px;
 `
 
 export const CardList = styled.View `
     background: lightgray;
     align-items: center;
     height: 20px;
-    position: absolute;
-    top: 20px;
 `
 
 export const Search = styled.TextInput `
-    width: 300px;
-    padding: 20px;
+    background-color: lightgray;
+    padding: 10px;
+    justify-content: flex-start;
+    width: 50%;
+    border-radius: 10px;
+    
+`
+
+export const Procurar = styled.TouchableOpacity `
+    align-items: center;
+    background-color: rgb(69, 219, 248);
+    padding: 15px;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 5px;
+
+`
+
+export const Header = styled.View `
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 0px;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
 `
